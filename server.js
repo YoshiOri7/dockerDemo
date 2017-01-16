@@ -5,4 +5,7 @@ app.get('/', function (req, res) {
   res.send('Hello World')
 })
 
-app.listen(3000)
+var port = 3000;
+app.listen(port, function () {
+  console.log('server listening on port ' + port);
+});
